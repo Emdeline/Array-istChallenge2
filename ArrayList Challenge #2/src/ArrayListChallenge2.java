@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+
 public class ArrayListChallenge2
 	{
 
@@ -15,7 +17,18 @@ public class ArrayListChallenge2
 					dogs.add("Bernese Mountain Dog");
 					dogs.add("Corgie");
 					dogs.add("Mutt (Mixed Dog)");
+					
+					Collections.sort(dogs);
+					
+					for (String d : dogs)
+						{
+							System.out.println(d);
+						}
+					System.out.println(dogs.get(0));
+					System.out.println(dogs.get(9));
 
+						
 			}
+		
 
 	}
