@@ -3,14 +3,27 @@ import java.util.Collections;
 
 public class ArrayListChallenge2
 	{
+		static ArrayList <String> dogs = new ArrayList <String>();
+
+		public static void printList()
+		{
+			for (String d : dogs)
+				{
+					System.out.println(d);
+				}
+			
+		}
+		public static void longest()
+			{
+				
+			}	
 
 		public static void main(String[] args)
 			{
 			//Question 1 code...
-				ArrayList <String> dogs = new ArrayList <String>();
 					dogs.add("Border Collie");
 					dogs.add("Blue Healer");
-					dogs.add("Golden Reterver");
+					dogs.add("Pit Bull");
 					dogs.add("Gray Hound");
 					dogs.add("Jack Russle Terrior");
 					dogs.add("German Shepherd");
@@ -21,12 +34,7 @@ public class ArrayListChallenge2
 					
 			//Question 2 code...
 					Collections.sort(dogs);
-					
-					for (String d : dogs)
-						{
-							System.out.println(d);
-						}
-					
+					printList();
 					System.out.println(" ");
 					
 			//Question 3 code...
@@ -35,16 +43,28 @@ public class ArrayListChallenge2
 					
 					System.out.println(" ");
 					
-			//Question 4 code...
-					for ()
-						{
-							System.out.println();
-						}
+			//Question 4 code...					
+							for (int i = dogs.size()-1; i >= 0; i--)
+								{
+									String frontLetter = dogs.get(i).substring(0, 1);	
+
+									if (frontLetter.equals("B"))
+										{
+											dogs.remove(i);
+										}
+								}
+							printList();
+
+						
+						
 					System.out.println(" ");
 					
 			//Question 5 code...
-					System.out.println("Mutt");
-						
+				
+					
+								
+							
+					
 			}
 		
 
