@@ -58,10 +58,24 @@ public class ArrayListChallenge2
 						
 						
 					System.out.println(" ");
-					
+		//loop through my things you are beatutiful and great and valued deeply
+
 			//Question 5 code...
-				
+					int maxvalue = Integer.MIN_VALUE;
+					int minvalue = Integer.MAX_VALUE;
 					
+					for (int row = 0; row < dogs.size(); row++)
+						{
+							if(dogs.get(9) == maxvalue)
+								{
+									
+									
+								}
+						}
+					System.out.println("Your max value is: " + maxvalue);
+					System.out.println("Your min value is: " + minvalue);
+				
+						
 								
 							
 					
