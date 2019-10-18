@@ -61,21 +61,31 @@ public class ArrayListChallenge2
 		//loop through my things you are beatutiful and great and valued deeply
 
 			//Question 5 code...
-					int maxvalue = Integer.MIN_VALUE;
-					int minvalue = Integer.MAX_VALUE;
-					
-					for (int row = 0; row < dogs.size(); row++)
+					int index = 0;
+					int max = dogs.get(0).length();
+									
+					for (int d = 0; d < dogs.size(); d++)
 						{
-							if(dogs.get(9) == maxvalue)
+							if(dogs.get(index).length() > max)
 								{
 									
-									
+									index = d;
 								}
 						}
-					System.out.println("Your max value is: " + maxvalue);
-					System.out.println("Your min value is: " + minvalue);
-				
-						
+					System.out.println(dogs.get(index));
+					
+					int index2 = 0;
+					int min = dogs.get(0).length();
+									
+					for (int d = 0; d < dogs.size(); d++)
+						{
+							if(dogs.get(index2).length() < min)
+								{
+									
+									index2 = d;
+								}
+						}
+					System.out.println(dogs.get(index2));
 								
 							
 					
